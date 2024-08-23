@@ -67,6 +67,7 @@ body {
     display: flex;
     justify-content: space-around;
     color: var(--main-text-input-button-color);
+    
 }
 
 .input-form-button {
@@ -84,7 +85,7 @@ body {
     cursor: pointer;
     justify-content: center;
     color: var(--main-text-button-color);
-    width:75vh; 
+    width:30rem; 
 }
 
 .input-form-button button:hover {
@@ -109,7 +110,7 @@ body {
     padding: 0.6rem 0.5rem;
     border: 2px solid var(--main-bg-shadow-color);
     border-radius: 10px;
-    width:75vh; 
+    
 }
 
 
@@ -169,3 +170,5 @@ body {
         width: 100%;
     }
 }
+
+
