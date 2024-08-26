@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root {
+    --main-title-color: #002F7D; 
+    --main-img-bg-color: #FFF253;
+    --main-bg-shadow-color: #cfd6e0;
+    --main-text-color: #535353;
+    --main-dark: #000000;
+    --main-white: #ffffff;
+    --main-button-bg-color: #002F7D; /* Cor para o botão */
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.bg-menu {
+    width: 9%;
+    height: 100%;
+    background-color: var(--main-img-bg-color);
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: space-between;
+}
+
+.img-menu1 {
+    margin-top: 6vh;
+}
+
+.img-menu2 {
+    margin-bottom: 60vh;
+}
+
+.titulo-home {
+    position: absolute;
+    width: 100%;
+    top: 7vh;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.titulo-home h2 {
+    margin-left: 30vh;
+    color: var(--main-title-color);
+}
+
+.titulo-home h3 {
+    margin: 1vh 14vh;
+    color: var(--main-text-color);
+}
+
+.main-content {
+    width: 100%; 
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid var(--main-dark);
+    margin: 15vh;
+    padding-top: 3vh;
+}
+
+.search-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.search-container input[type="text"] {
+    width: 650px;
+    padding: 1rem;
+    border-radius: 3vh;
+    font-size: 2vh;
+    margin-right: 25vh;
+    border: 1.7px solid var(--main-dark);
+    color: var(--main-dark);
+}
+
+.search-container button {
+    background-color: var(--main-button-bg-color);
+    color: var(--main-white);
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 200px; 
+}
+
+.search-container button:hover {
+    background-color: #001d4f; 
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/trainingadmin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="bg-menu">
+            <div class="img-menu1">
+                <img src="../img/topomenu_img.png" alt="Logo">
+            </div>
+            <div class="img-menu2">
+                <img src="../img/opcoes.png" alt="Opções">
+            </div>
+            <div class="img-menu3">
+                <img src="../img/robodesenho_img.png" alt="Robô em Desenho">
+            </div>
+            <div class="img-menu4">
+                <img src="../img/engrenagem_img.png" alt="Logo de engrenagem">
+            </div>
+        </div>
+
+        <div class="titulo-home">
+            <h2>Treinamentos</h2>
+            <h3>Bem vindo, "nome"</h3>
+        </div>
+
+        <div class="main-content">
+            <div class="search-container">
+                <input type="text" placeholder="Pesquise por treinamentos...">
+                <a href="#popup" class="new-training-btn">Novo Treinamento</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="popup" class="popup-overlay">
+        <div class="popup-content">
+            <div class="pop">
+                <a href="#" class="close-icon"><i class="fa-solid fa-x"></i></a>
+                <h2>Lista de Inscritos</h2>
+                <p>RH - Recursos Humanos</p>
+                
+                <table class="inscritos-table">
+                    <thead>
+                        <tr>
+                            <th class="nome">Nome</th>
+                            <th class="email">Email</th>
+                            <th class="telefone">Telefone</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class=>
+                            <td>João Silva</td>
+                            <td class="email1">joao.silva@example.com</td>
+                            <td class="telefone1">(11) 98765-4321</td>
+                        </tr>
+                        <tr>
+                            <td>Maria Oliveira</td>
+                            <td class="email2">maria.oliveira@example.com</td>
+                            <td class="telefone2">(21) 99876-5432</td>
+                        </tr>
+                        <!-- Add more rows as needed -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="mobile-btn">
+        <a href="#popup" class="mobile-bottom-btn"><i class="fa-solid fa-plus"></i></a>
+    </div>
+</body>
+
+</html>
