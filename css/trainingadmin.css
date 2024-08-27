@@ -103,13 +103,13 @@ body {
     width: 650px;
     padding: 1rem;
     border-radius: 3vh;
+    padding-left: 3rem;
     font-size: 2vh;
     margin-right: 25vh;
     border: 1.7px solid var(--main-dark);
     color: var(--main-dark);
 }
 
-/* Botão novo treinamento */
 .new-training-btn {
     background-color: var(--main-bg-popup);
     color: var(--main-white);
@@ -454,7 +454,8 @@ body {
     }
 
     .mobile-bottom-btn:hover {
-        background-color: #001d4f;
+        background-color: #001d4f; 
+
     }
 
 
@@ -470,10 +471,23 @@ body {
         width: 400px;
     }
 
-    .training-table th, .training-table td {
-        height: 2vh;
+    .training-table-container {
+        width: 95%;
     }
-
+    
+    .training-table {
+        width: 100%;
+        border-collapse: separate; 
+        border-spacing: 0 10px; 
+        background-color: var(--main-white);
+    }
+    
+    .training-table th, .training-table td {
+        padding: 0.9rem;
+        text-align: center;
+        font-size: 11px;
+    }
+    
     #new-training-popup .pop {
         padding: 1rem;
     }
