@@ -380,7 +380,7 @@ body {
         flex-direction: column;
     }
 
-    .img-menu4, .titulo-home h3, .main-content, .email, .telefone, .email1, .telefone1, .email2, .telefone2{
+    .img-menu4, .titulo-home h3, .email, .telefone, .email1, .telefone1, .email2, .telefone2{
         display: none;
     }
 
@@ -438,13 +438,14 @@ body {
         background-color: var(--main-bg-popup);
         color: var(--main-white);
         border: none;
-        padding: 0.8rem 1.5rem;
-        font-size: 1.5rem;
+        padding: 0.5rem 1rem;
+        font-size: 10px;
         cursor: pointer;
         border-radius: 4px;
         width: auto;
-        height: 9vh; 
-        margin-bottom: 1vh;
+        height: 6vh; 
+        margin-bottom: 1.5vh;
+        margin-right: 3.5vh;
         align-items: center;
         justify-content: center;
     }
@@ -457,6 +458,37 @@ body {
         background-color: #001d4f; 
 
     }
+
+.card {
+    background-color: var(--main-departament-bg);
+    color: var(--main-text-color);
+    text-decoration: underline;
+    margin: 3rem 0;
+    border-radius: 30px;
+    padding: 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+.card-header {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.card-content {
+    font-size: 0.9rem;
+}
+
+.card-content p {
+    margin: 0.5rem 0;
+}
+
+.card-content a {
+    color: var(--main-bg-popup);
+    text-decoration: none;
+    font-weight: bold;
+}
 
 
 }
@@ -472,7 +504,7 @@ body {
     }
 
     .training-table-container {
-        width: 95%;
+        width: 100%;
     }
     
     .training-table {
@@ -539,6 +571,34 @@ body {
         left: 60%;
     }
     
+    .main-content{
+        margin: 0;
+        border: none;
+    }
+
+    .pagination-info{
+        margin-top: 1vh;
+    }
+
+    .training-table-container {
+        width: 100%;
+    }
+    
+    .training-table {
+        border-collapse: separate; 
+        border-spacing: 0 10px; 
+        background-color: var(--main-white);
+    }
+    
+    .training-table th, .training-table td {
+        text-align: center;
+        font-size: 9px;
+    }
+
+    .pagination-info{
+        margin-right: 6vh;
+    }
+
 }    
 
 @media (min-width: 200px) and (max-width: 550px) {
@@ -585,13 +645,48 @@ body {
     .select-container i {
         left: 78%;
     }
+
+    .main-content{
+        margin: 0;
+        border: none;
+    }
+
+    .pagination-info{
+        margin-top: 1vh;
+    }
+
+    .training-table-container {
+        width: 100%;
+    }
+    
+    .training-table {
+        border-collapse:  collapse; 
+        background-color: var(--main-white);
+    }
+    
+    .training-table th, .training-table td {
+        text-align: center;
+        font-size: 7px;
+    }    
     
 }    
-
 
 @media (min-width: 1025px) {
     .mobile-btn {
         display: none;
-    }
+    }   
+    
 }
 
+@media (min-width: 501px) {
+    .card {
+        display: none;
+    }    
+}
+
+@media (max-width: 500px) {
+    .training-table-container, .pagination-info {
+        display: none;
+    }
+
+}

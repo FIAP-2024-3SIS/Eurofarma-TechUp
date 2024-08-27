@@ -41,6 +41,7 @@
                 <a href="#new-training-popup" class="new-training-btn"><i class="fa-solid fa-plus"></i> Novo Treinamento</a>
             </div>
 
+            <!-- Tabela de treinamentos -->
             <div class="training-table-container">
                 <table class="training-table">
                     <thead>
@@ -98,6 +99,27 @@
                 </table>
             </div>
 
+            <div class="small-screen-cards">
+                <div class="card">
+                    <div class="card-header">RH - Recursos Humanos</div>
+                    <div class="card-content">
+                        <p><a href="#popup" class="view-inscritos-btn"><i class="fa-solid fa-eye"></i> Lista de Inscritos</a></p>
+                        <p><strong>Data e Horário:</strong> 19/06 às 14:00</p>
+                        <p><strong>Duração:</strong> 45 Min</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">RH - Recursos Humanos</div>
+                    <div class="card-content">
+                        <p><a href="#popup" class="view-inscritos-btn"><i class="fa-solid fa-eye"></i> Lista de Inscritos</a></p>
+                        <p><strong>Data e Horário:</strong> 19/06 às 14:00</p>
+                        <p><strong>Duração:</strong> 45 Min</p>
+                    </div>
+                </div>
+               
+            </div>
+
             <div class="pagination-info">
                 <span>1/1</span>
                 <i class="fa-solid fa-arrow-right"></i>
@@ -138,46 +160,46 @@
         </div>
     </div>
 
-<!-- Novo Pop-up para criar treinamento -->
-<div id="new-training-popup" class="popup-overlay">
-    <div class="popup-content">
-        <div class="pop">
-            <a href="#" class="close-icon"><i class="fa-solid fa-x"></i></a>
-            <h2>Criar Novo Treinamento</h2>
-            <hr class="title-separator">
-            <form>
-                <label for="training-department">Área de Treinamento:</label>
-                <div class="select-container">
-                    <input type="text" id="training-department" placeholder="Selecionar a área"><i class="fa-solid fa-arrow-down"></i>
-                </div>
+    <!-- Novo Pop-up para criar treinamento -->
+    <div id="new-training-popup" class="popup-overlay">
+        <div class="popup-content">
+            <div class="pop">
+                <a href="#" class="close-icon"><i class="fa-solid fa-x"></i></a>
+                <h2>Criar Novo Treinamento</h2>
+                <hr class="title-separator">
+                <form>
+                    <label for="training-department">Área de Treinamento:</label>
+                    <div class="select-container">
+                        <input type="text" id="training-department" placeholder="Selecionar a área"><i class="fa-solid fa-arrow-down"></i>
+                    </div>
 
-                <label for="training-duration">Duração:</label>
-                <div class="select-container">
-                    <input type="text" id="training-duration" placeholder="Selecionar a duração"><i class="fa-solid fa-arrow-down"></i>
-                </div>
+                    <label for="training-duration">Duração:</label>
+                    <div class="select-container">
+                        <input type="text" id="training-duration" placeholder="Selecionar a duração"><i class="fa-solid fa-arrow-down"></i>
+                    </div>
 
-                <label for="training-date">Data e Horário:</label>
-                <div class="select-container">
-                    <input type="datetime-local" id="training-date" placeholder="Selecionar a data e horário"><i class="fa-solid fa-arrow-down"></i>
-                </div>
+                    <label for="training-date">Data e Horário:</label>
+                    <div class="select-container">
+                        <input type="datetime-local" id="training-date" placeholder="Selecionar a data e horário"><i class="fa-solid fa-arrow-down"></i>
+                    </div>
 
-                <label for="training-mode">Modalidade:</label>
-                <div class="select-container">
-                    <input type="text" id="training-mode" placeholder="Selecionar a modalidade"><i class="fa-solid fa-arrow-down"></i>
-                </div>
+                    <label for="training-mode">Modalidade:</label>
+                    <div class="select-container">
+                        <input type="text" id="training-mode" placeholder="Selecionar a modalidade"><i class="fa-solid fa-arrow-down"></i>
+                    </div>
 
-                <label for="training-location">Local:</label>
-                <div class="select-container">
-                    <input type="text" id="training-location" placeholder="Selecionar o local"><i class="fa-solid fa-arrow-down"></i>
-                </div>
-                
-                <div class="btn-createtraining">
-                    <button type="submit">Criar Treinamento</button>
-                </div>
-            </form>
+                    <label for="training-location">Local:</label>
+                    <div class="select-container">
+                        <input type="text" id="training-location" placeholder="Selecionar o local"><i class="fa-solid fa-arrow-down"></i>
+                    </div>
+                    
+                    <div class="btn-createtraining">
+                        <button type="submit">Criar Treinamento</button>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
-</div>
 
     <div class="mobile-btn">
         <a href="#new-training-popup" class="mobile-bottom-btn"><i class="fa-solid fa-plus"></i></a>
