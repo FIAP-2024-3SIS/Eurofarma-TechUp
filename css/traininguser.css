@@ -9,6 +9,8 @@
     --main-bg-popup: #01348A; 
     --main-departament-bg: #8597B66B;
     --main-otheritens-bgtable: #EDEDED;
+    --main-registred: #217A0B6B;
+
 }
 
 * {
@@ -83,11 +85,11 @@ body {
 .search-container {
     width: 100%;
     display: flex;
-    justify-content: space-around;
     align-items: center;
 }
 
 .search-input-container {
+    margin-left: 20px;
     position: relative;
     display: flex;
     align-items: center;
@@ -361,7 +363,7 @@ body {
 #new-training-popup .pop button {
     background-color: var(--main-bg-popup);
     color: var(--main-white);
-    border: 2.5px solid var(--main-white);
+    border: 2.5px solid var(--main-registred);
     font-size: 15px;
     cursor: pointer;
     border-radius: 25px;
@@ -370,7 +372,7 @@ body {
 }
 
 #new-training-popup .pop button:hover {
-    background-color: var(--main-title-color);
+    background-color: var(--main-registred);
 }
 
 
