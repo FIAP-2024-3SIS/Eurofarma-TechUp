@@ -9,6 +9,7 @@
     --main-bg-popup: #01348A; 
     --main-departament-bg: #8597B66B;
     --main-otheritens-bgtable: #EDEDED;
+    --main-registred: #217A0B6B;
 }
 
 * {
@@ -83,7 +84,6 @@ body {
 .search-container {
     width: 100%;
     display: flex;
-    justify-content: space-around;
     align-items: center;
 }
 
@@ -91,6 +91,8 @@ body {
     position: relative;
     display: flex;
     align-items: center;
+    margin-left: 20px;
+    
 }
 
 .search-input-container .search-icon {
@@ -209,7 +211,7 @@ body {
 }
 
 .training-table td:first-child {
-    background-color: var(--main-departament-bg); 
+    background-color: var(--main-registred); 
     font-weight: bold;
 }
 
@@ -361,7 +363,7 @@ body {
 #new-training-popup .pop button {
     background-color: var(--main-bg-popup);
     color: var(--main-white);
-    border: 2.5px solid var(--main-white);
+    border: 2.5px solid var(--main-registred);
     font-size: 15px;
     cursor: pointer;
     border-radius: 25px;
@@ -370,7 +372,7 @@ body {
 }
 
 #new-training-popup .pop button:hover {
-    background-color: var(--main-title-color);
+    background-color: var(--main-registred);
 }
 
 
@@ -459,7 +461,7 @@ body {
     }
 
 .card {
-    background-color: var(--main-departament-bg);
+    background-color: var(--main-registred);
     color: var(--main-text-color);
     text-decoration: underline;
     margin: 3rem 0;
@@ -484,7 +486,7 @@ body {
 }
 
 .card-content a {
-    color: var(--main-bg-popup);
+    color: var(--main-dark);
     text-decoration: none;
     font-weight: bold;
 }
