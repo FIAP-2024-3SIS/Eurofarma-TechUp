@@ -67,10 +67,7 @@ body {
     display: flex;
     justify-content: space-around;
     color: var(--main-text-input-button-color);
-<<<<<<< HEAD
-=======
     
->>>>>>> 85c1e2ea702af7531bda793d2352d43fb14e98d9
 }
 
 .input-form-button {
@@ -88,11 +85,7 @@ body {
     cursor: pointer;
     justify-content: center;
     color: var(--main-text-button-color);
-<<<<<<< HEAD
-    width:75vh; 
-=======
     width:30rem; 
->>>>>>> 85c1e2ea702af7531bda793d2352d43fb14e98d9
 }
 
 .input-form-button button:hover {
@@ -117,11 +110,7 @@ body {
     padding: 0.6rem 0.5rem;
     border: 2px solid var(--main-bg-shadow-color);
     border-radius: 10px;
-<<<<<<< HEAD
-    width:75vh; 
-=======
     
->>>>>>> 85c1e2ea702af7531bda793d2352d43fb14e98d9
 }
 
 
@@ -180,10 +169,6 @@ body {
     .input-form-button button {
         width: 100%;
     }
-<<<<<<< HEAD
-}
-=======
 }
 
 
->>>>>>> 85c1e2ea702af7531bda793d2352d43fb14e98d9
