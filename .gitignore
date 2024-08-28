@@ -1,0 +1,23 @@
+# Ambiente virtual
+venv/
+
+# Arquivos compilados
+__pycache__/
+*.pyc
+*.pyo
+
+# Arquivos de configuração IDE
+.vscode/
+.idea/
+
+# Arquivos de banco de dados
+*.sqlite3
+
+# Arquivos de logs
+*.log
+
+# Arquivos sensíveis
+.env
+
+# streamlit secrets key
+.streamlit/

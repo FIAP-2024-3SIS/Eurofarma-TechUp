@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/trainingadmin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Treinamentos</title>
+</head>
+<body>
+    <div class="container">
+        <div class="bg-menu">
+            <div class="img-menu1">
+                <img src="../img/topomenu_img.png" alt="Logo">
+            </div>
+            <div class="img-menu2">
+                <img src="../img/opcoes.png" alt="Opções">
+            </div>
+            <div class="img-menu4">
+                <img src="../img/robodesenho_img.png" alt="Robô em Desenho">
+            </div>
+            <div class="img-menu5">
+                <img src="../img/engrenagem_img.png" alt="Logo de engrenagem">
+            </div>
+        </div>
+
+        <div class="titulo-home">
+            <h2>Treinamentos</h2>
+            <h3>Bem vindo, "nome"</h3>
+        </div>
+
+        <div class="main-content">
+            <div class="search-container">
+                <div class="search-input-container">
+                    <i class="fa-solid fa-binoculars search-icon"></i>
+                    <input type="text" placeholder="Pesquise por treinamentos...">
+                </div>
+                <a href="#new-training-popup" class="new-training-btn"><i class="fa-solid fa-plus"></i> Novo Treinamento</a>
+            </div>
+
+            <!-- Tabela de treinamentos -->
+            <div class="training-table-container">
+                <table class="training-table">
+                    <thead>
+                        <tr>
+                            <th>Departamento:</th>
+                            <th>Nome:</th>
+                            <th>Data e Horário:</th>
+                            <th>Duração:</th>
+                            <th>Modalidade:</th>
+                            <th>Inscritos:</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>RH - Recursos Humanos</td>
+                            <td>Treinamento A</td>
+                            <td>19/06 às 14:00</td>
+                            <td>45 Min</td>
+                            <td>Presencial</td>
+                            <td><a href="#popup" class="view-inscritos-btn"><i class="fa-solid fa-eye"></i></a> Lista de Inscritos</td>
+                        </tr>
+                        <tr>
+                            <td>Banco de Dados - TI</td>
+                            <td>Treinamento B</td>
+                            <td>28/02 às 13:00</td>
+                            <td>2H</td>
+                            <td>Presencial</td>
+                            <td><a href="#popup" class="view-inscritos-btn"><i class="fa-solid fa-eye"></i></a> Lista de Inscritos</td>
+                        </tr>
+                        <tr>
+                            <td>Segurança da Informação</td>
+                            <td>Treinamento C</td>
+                            <td>09/02 às 10:00</td>
+                            <td>1h30Min</td>
+                            <td>Presencial</td>
+                            <td><a href="#popup" class="view-inscritos-btn"><i class="fa-solid fa-eye"></i></a> Lista de Inscritos</td>
+                        </tr>
+                        <tr>
+                            <td>Linha de Produção</td>
+                            <td>Treinamento D</td>
+                            <td>20/06 às 14:00</td>
+                            <td>2H</td>
+                            <td>Presencial</td>
+                            <td><a href="#popup" class="view-inscritos-btn"><i class="fa-solid fa-eye"></i></a> Lista de Inscritos</td>
+                        </tr>
+                        <tr>
+                            <td>Biomedina - Testes</td>
+                            <td>Treinamento E</td>
+                            <td>19/06 às 12:00</td>
+                            <td>30 Min</td>
+                            <td>Presencial</td>
+                            <td><a href="#popup" class="view-inscritos-btn"><i class="fa-solid fa-eye"></i></a> Lista de Inscritos</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="small-screen-cards">
+                <div class="card">
+                    <div class="card-header">RH - Recursos Humanos</div>
+                    <div class="card-content">
+                        <p><a href="#popup" class="view-inscritos-btn"><i class="fa-solid fa-eye"></i> Lista de Inscritos</a></p>
+                        <p><strong>Data e Horário:</strong> 19/06 às 14:00</p>
+                        <p><strong>Duração:</strong> 45 Min</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">RH - Recursos Humanos</div>
+                    <div class="card-content">
+                        <p><a href="#popup" class="view-inscritos-btn"><i class="fa-solid fa-eye"></i> Lista de Inscritos</a></p>
+                        <p><strong>Data e Horário:</strong> 19/06 às 14:00</p>
+                        <p><strong>Duração:</strong> 45 Min</p>
+                    </div>
+                </div>
+               
+            </div>
+
+            <div class="pagination-info">
+                <span>1/1</span>
+                <i class="fa-solid fa-arrow-right"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pop-up para lista de inscritos -->
+    <div id="popup" class="popup-overlay">
+        <div class="popup-content">
+            <div class="pop">
+                <a href="#" class="close-icon"><i class="fa-solid fa-x"></i></a>
+                <h2>Lista de Inscritos</h2>
+                <p>RH - Recursos Humanos</p>
+
+                <table class="inscritos-table">
+                    <thead>
+                        <tr>
+                            <th class="nome">Nome</th>
+                            <th class="email">Email</th>
+                            <th class="telefone">Telefone</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>João Silva</td>
+                            <td class="email1">joao.silva@example.com</td>
+                            <td class="telefone1">(11) 98765-4321</td>
+                        </tr>
+                        <tr>
+                            <td>Maria Oliveira</td>
+                            <td class="email2">maria.oliveira@example.com</td>
+                            <td class="telefone2">(21) 99876-5432</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Novo Pop-up para criar treinamento -->
+    <div id="new-training-popup" class="popup-overlay">
+        <div class="popup-content">
+            <div class="pop">
+                <a href="#" class="close-icon"><i class="fa-solid fa-x"></i></a>
+                <h2>Criar Novo Treinamento</h2>
+                <hr class="title-separator">
+                <form>
+                    <label for="training-department">Área de Treinamento:</label>
+                    <div class="select-container">
+                        <input type="text" id="training-department" placeholder="Selecionar a área"><i class="fa-solid fa-arrow-down"></i>
+                    </div>
+
+                    <label for="training-duration">Duração:</label>
+                    <div class="select-container">
+                        <input type="text" id="training-duration" placeholder="Selecionar a duração"><i class="fa-solid fa-arrow-down"></i>
+                    </div>
+
+                    <label for="training-date">Data e Horário:</label>
+                    <div class="select-container">
+                        <input type="datetime-local" id="training-date" placeholder="Selecionar a data e horário"><i class="fa-solid fa-arrow-down"></i>
+                    </div>
+
+                    <label for="training-mode">Modalidade:</label>
+                    <div class="select-container">
+                        <input type="text" id="training-mode" placeholder="Selecionar a modalidade"><i class="fa-solid fa-arrow-down"></i>
+                    </div>
+
+                    <label for="training-location">Local:</label>
+                    <div class="select-container">
+                        <input type="text" id="training-location" placeholder="Selecionar o local"><i class="fa-solid fa-arrow-down"></i>
+                    </div>
+                    
+                    <div class="btn-createtraining">
+                        <button type="submit">Criar Treinamento</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="mobile-btn">
+        <a href="#new-training-popup" class="mobile-bottom-btn"><i class="fa-solid fa-plus"></i></a>
+    </div>
+</body>
+</html>
