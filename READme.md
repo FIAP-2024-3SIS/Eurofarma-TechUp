@@ -38,5 +38,6 @@ Nosso objetivo é eliminar a duplicação de dados e facilitar o acesso a inform
 ![EuroBot Tela Inicial](https://github.com/user-attachments/assets/56662567-5d5e-488d-b378-60fb4ab8b999)
 
 ### EuroBot: Tela de Conversa
-![Euro bot conversa image](https://github.com/user-attachments/assets/ead8966b-321e-42fe-9c20-0958436bb861)
+![EuroBot conversaimage](https://github.com/user-attachments/assets/cfabdbf2-3eda-43e8-9a34-2c1b014a3bed)
+
 
