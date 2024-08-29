@@ -5,7 +5,8 @@ Nosso projeto visa enfrentar os desafios de Gestão Digital de Treinamentos e Ge
 ## Objetivo
 
 Nosso objetivo é eliminar a duplicação de dados e facilitar o acesso a informações-chave, promovendo um ambiente mais ágil e eficiente. Além disso, garantiremos a personalização de treinamentos e a customização de conteúdos para cada participante, contribuindo para uma gestão mais sustentável e orientada a dados, alinhada com as diretrizes da Eurofarma.
-## Funcionalidades do Sistema
+
+## Funcionalidades do sistema
 
 ### Admin
 - **Criar, editar, visualizar e deletar treinamentos.**
@@ -37,4 +38,5 @@ Nosso objetivo é eliminar a duplicação de dados e facilitar o acesso a inform
 ![EuroBot Tela Inicial](https://github.com/user-attachments/assets/56662567-5d5e-488d-b378-60fb4ab8b999)
 
 ### EuroBot: Tela de Conversa
-![EuroBot Conversa](https://github.com/user-attachments/assets/7fb2ca30-1ce1-432f-beb4-7d9361c9f7a4)
+![Euro bot conversa image](https://github.com/user-attachments/assets/ead8966b-321e-42fe-9c20-0958436bb861)
+
