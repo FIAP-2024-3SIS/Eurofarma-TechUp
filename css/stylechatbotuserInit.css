@@ -45,6 +45,10 @@ body {
 .img-menu2 {
     margin-bottom: 60vh;
 }
+.img-menu4 i {
+    font-size: 35px;
+    margin-bottom: 50px;
+}
 
 .main-content {
     width: 100%; 

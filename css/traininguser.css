@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 :root {
-    --main-title-color: #002F7D; 
+    --main-title-color: #002F7D;
     --main-img-bg-color: #FFF253;
     --main-text-color: #535353;
     --main-dark: #000000;
     --main-white: #ffffff;
-    --main-bg-popup: #01348A; 
+    --main-bg-popup: #01348A;
     --main-departament-bg: #8597B66B;
     --main-otheritens-bgtable: #EDEDED;
     --main-registred: #217A0B6B;
@@ -32,22 +32,27 @@ body {
     display: flex;
 }
 
-.bg-menu { 
+.bg-menu {
     width: 9%;
     height: 100%;
     background-color: var(--main-img-bg-color);
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
 }
 
 .img-menu1 {
-    margin-top: 6vh;
+    margin-top: 20px;
 }
 
 .img-menu3 {
     margin-bottom: 30vh;
+}
+
+.img-menu5 i {
+    font-size: 35px;
+    margin-bottom: 50px;
 }
 
 /* Treinamentos e Bem vindo */
@@ -72,7 +77,7 @@ body {
 
 /* Div para a tabela */
 .main-content {
-    width: 100%; 
+    width: 100%;
     height: 80%;
     display: flex;
     flex-direction: column;
@@ -97,7 +102,7 @@ body {
 
 .search-input-container .search-icon {
     position: absolute;
-    left: 15px; 
+    left: 15px;
 }
 
 .search-container input[type="text"] {
@@ -130,14 +135,14 @@ body {
 .pagination-info {
     display: flex;
     align-items: center;
-    justify-content: flex-end; 
+    justify-content: flex-end;
     font-size: 2vh;
     color: var(--main-text-color);
     margin-left: 90%;
 }
 
 .pagination-info span {
-    margin-right: 1vh; 
+    margin-right: 1vh;
 }
 
 /* PopUp Inscritos */
@@ -145,11 +150,11 @@ body {
     position: fixed;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.8); 
-    display: none; 
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
     justify-content: center;
     align-items: center;
-    z-index: 1000; 
+    z-index: 1000;
 }
 
 .popup-overlay:target {
@@ -160,7 +165,7 @@ body {
     width: 683px;
     height: 90vh;
     background: var(--main-white);
-    color: var(--main-text-color); 
+    color: var(--main-text-color);
     padding: 20px;
     border-radius: 8px;
     position: relative;
@@ -189,13 +194,14 @@ body {
 
 .training-table {
     width: 100%;
-    border-collapse: separate; 
-    border-spacing: 0 1rem; 
+    border-collapse: separate;
+    border-spacing: 0 1rem;
     background-color: var(--main-white);
 }
 
-.training-table th, .training-table td {
-    border: 1px solid #939393; 
+.training-table th,
+.training-table td {
+    border: 1px solid #939393;
     padding: 1rem;
     text-align: center;
     font-size: 14px;
@@ -211,7 +217,7 @@ body {
 }
 
 .training-table td:first-child {
-    background-color: var(--main-departament-bg); 
+    background-color: var(--main-departament-bg);
     font-weight: bold;
 }
 
@@ -234,7 +240,8 @@ body {
     margin-top: 3vh;
 }
 
-.inscritos-table th, .inscritos-table td {
+.inscritos-table th,
+.inscritos-table td {
     border: 2px solid var(--main-white);
     padding: 2vh;
     text-align: center;
@@ -255,11 +262,11 @@ body {
     position: fixed;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.8); 
-    display: none; 
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
     justify-content: center;
     align-items: center;
-    z-index: 1000; 
+    z-index: 1000;
 }
 
 #new-training-popup:target {
@@ -267,7 +274,7 @@ body {
 }
 
 #new-training-popup .popup-content {
-    width: 600px; 
+    width: 600px;
     height: 98vh;
     position: relative;
 }
@@ -315,7 +322,7 @@ body {
     background-color: transparent;
     color: var(--main-white);
     font-size: 1rem;
-    width: 100%; 
+    width: 100%;
     margin-bottom: 1rem;
     height: 30px;
 }
@@ -350,14 +357,14 @@ body {
     color: var(--main-white);
 }
 
-.select-container ::placeholder  {
+.select-container ::placeholder {
     color: var(--main-white);
 }
 
-.btn-createtraining{
+.btn-createtraining {
     display: flex;
     justify-content: center;
-    align-items: center;    
+    align-items: center;
 }
 
 #new-training-popup .pop button {
@@ -381,18 +388,25 @@ body {
         flex-direction: column;
     }
 
-    .img-menu4, .titulo-home h3, .email, .telefone, .email1, .telefone1, .email2, .telefone2{
+    .img-menu4,
+    .titulo-home h3,
+    .email,
+    .telefone,
+    .email1,
+    .telefone1,
+    .email2,
+    .telefone2 {
         display: none;
     }
 
     .bg-menu {
         width: 100%;
-        height: 10vh; 
+        height: 10vh;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
-        position: fixed; 
+        position: fixed;
         bottom: 0;
     }
 
@@ -400,11 +414,18 @@ body {
         width: 5vh;
     }
 
-    .img-menu1, .img-menu2, .img-menu3 {
+    .img-menu1,
+    .img-menu2,
+    .img-menu3 {
         margin: 0;
         display: flex;
-        justify-content: space-evenly; 
+        justify-content: space-evenly;
         align-items: center;
+    }
+
+    .img-menu5 i {
+        font-size: 60px;
+        margin-bottom: 0;
     }
 
     .titulo-home {
@@ -413,7 +434,7 @@ body {
         top: 0;
         margin-left: -14vh;
         margin-top: 3vh;
-    }    
+    }
 
     .search-container {
         display: none;
@@ -432,7 +453,7 @@ body {
         bottom: 9vh;
         position: fixed;
         padding: 1vh;
-        z-index: 1;   
+        z-index: 1;
     }
 
     .mobile-bottom-btn {
@@ -444,7 +465,7 @@ body {
         cursor: pointer;
         border-radius: 4px;
         width: auto;
-        height: 6vh; 
+        height: 6vh;
         margin-bottom: 1.5vh;
         margin-right: 3.5vh;
         align-items: center;
@@ -452,44 +473,44 @@ body {
     }
 
     .mobile-bottom-btn i {
-        font-size: 1.5rem; 
+        font-size: 1.5rem;
     }
 
     .mobile-bottom-btn:hover {
-        background-color: #001d4f; 
+        background-color: #001d4f;
 
     }
 
-.card {
-    background-color: var(--main-departament-bg);
-    color: var(--main-text-color);
-    text-decoration: underline;
-    margin: 3rem 0;
-    border-radius: 30px;
-    padding: 2rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    .card {
+        background-color: var(--main-departament-bg);
+        color: var(--main-text-color);
+        text-decoration: underline;
+        margin: 3rem 0;
+        border-radius: 30px;
+        padding: 2rem;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 
-}
+    }
 
-.card-header {
-    font-weight: bold;
-    font-size: 1.2rem;
-    margin-bottom: 0.5rem;
-}
+    .card-header {
+        font-weight: bold;
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+    }
 
-.card-content {
-    font-size: 0.9rem;
-}
+    .card-content {
+        font-size: 0.9rem;
+    }
 
-.card-content p {
-    margin: 0.5rem 0;
-}
+    .card-content p {
+        margin: 0.5rem 0;
+    }
 
-.card-content a {
-    color: var(--main-bg-popup);
-    text-decoration: none;
-    font-weight: bold;
-}
+    .card-content a {
+        color: var(--main-bg-popup);
+        text-decoration: none;
+        font-weight: bold;
+    }
 
 
 }
@@ -507,25 +528,26 @@ body {
     .training-table-container {
         width: 100%;
     }
-    
+
     .training-table {
         width: 100%;
-        border-collapse: separate; 
-        border-spacing: 0 10px; 
+        border-collapse: separate;
+        border-spacing: 0 10px;
         background-color: var(--main-white);
     }
-    
-    .training-table th, .training-table td {
+
+    .training-table th,
+    .training-table td {
         padding: 0.9rem;
         text-align: center;
         font-size: 11px;
     }
-    
+
     #new-training-popup .pop {
         padding: 1rem;
     }
 
-    .title-separator{
+    .title-separator {
         margin-bottom: 4px;
     }
 
@@ -546,7 +568,7 @@ body {
         padding: 1rem;
     }
 
-    .title-separator{
+    .title-separator {
         margin-bottom: 4px;
     }
 
@@ -563,44 +585,45 @@ body {
         height: 5vh;
     }
 
-    .select-container{
+    .select-container {
         margin: 0;
     }
 
-    
+
     .select-container i {
         left: 60%;
     }
-    
-    .main-content{
+
+    .main-content {
         margin: 0;
         border: none;
     }
 
-    .pagination-info{
+    .pagination-info {
         margin-top: 1vh;
     }
 
     .training-table-container {
         width: 100%;
     }
-    
+
     .training-table {
-        border-collapse: separate; 
-        border-spacing: 0 10px; 
+        border-collapse: separate;
+        border-spacing: 0 10px;
         background-color: var(--main-white);
     }
-    
-    .training-table th, .training-table td {
+
+    .training-table th,
+    .training-table td {
         text-align: center;
         font-size: 9px;
     }
 
-    .pagination-info{
+    .pagination-info {
         margin-right: 6vh;
     }
 
-}    
+}
 
 @media (min-width: 200px) and (max-width: 550px) {
 
@@ -608,7 +631,7 @@ body {
         padding: 1rem;
     }
 
-    .title-separator{
+    .title-separator {
         margin-bottom: 4px;
     }
 
@@ -621,7 +644,7 @@ body {
         font-size: 10px;
         border-radius: 25px;
         width: 150px;
-        height: 5vh;     
+        height: 5vh;
     }
 
     #new-training-popup .popup-content {
@@ -632,61 +655,65 @@ body {
     #new-training-popup .popup-content h2 {
         font-size: 13px;
     }
+
     #new-training-popup .pop input[type="text"],
     #new-training-popup .pop input[type="datetime-local"],
     #new-training-popup .pop label {
         font-size: 11px;
     }
 
-    .select-container{
+    .select-container {
         margin: 0;
     }
 
-    
+
     .select-container i {
         left: 78%;
     }
 
-    .main-content{
+    .main-content {
         margin: 0;
         border: none;
     }
 
-    .pagination-info{
+    .pagination-info {
         margin-top: 1vh;
     }
 
     .training-table-container {
         width: 100%;
     }
-    
+
     .training-table {
-        border-collapse:  collapse; 
+        border-collapse: collapse;
         background-color: var(--main-white);
     }
-    
-    .training-table th, .training-table td {
+
+    .training-table th,
+    .training-table td {
         text-align: center;
         font-size: 7px;
-    }    
-    
-}    
+    }
+
+}
 
 @media (min-width: 1025px) {
     .mobile-btn {
         display: none;
-    }   
-    
+    }
+
 }
 
 @media (min-width: 501px) {
     .card {
         display: none;
-    }    
+    }
 }
 
 @media (max-width: 500px) {
-    .training-table-container, .pagination-info {
+
+    .training-table-container,
+    .pagination-info {
         display: none;
     }
 
