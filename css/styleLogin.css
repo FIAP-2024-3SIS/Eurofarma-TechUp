@@ -137,6 +137,11 @@ input[type="password"] {
     background-image: url("../img/icon-lock.png");
 }
 
+input[type="email"]:not(:placeholder-shown),
+input[type="password"]:not(:placeholder-shown) {
+    background-image: none;
+}
+
 @media (min-width: 200px) and (max-width: 602px) {
     .bg-img-1 {
         display: none;
@@ -218,8 +223,7 @@ input[type="password"] {
     }
 
     .input-form input,
-    .input-form-button button {
-    }
+    .input-form-button button {}
 }
 
 
