@@ -24,6 +24,12 @@ const login = async () => {
         if (response == 200) {
             const log = await connection.json();
 
+            const accessToken = log.accessToken;
+            const refreshToken = log.refreshToken;
+
+            document.cookie = `accessToken=${accessToken}; path=/; SameSite=Strict`;
+            document.cookie = `refreshToken=${refreshToken}; path=/; SameSite=Strict`;
+
             window.location.href = "http://127.0.0.1:5500/html/trainingadmin.html"
 
         } else if (response == 403) {
