@@ -1,5 +1,3 @@
-// import { getAllTrainings } from './trainingadmin.js';
-
 const dataEmail = document.getElementById("email")
 const dataPassword = document.getElementById("senha")
 const submitButton = document.querySelector("#loginButton");
@@ -29,14 +27,11 @@ const login = async () => {
             const accessToken = log.accessToken;
             const refreshToken = log.refreshToken;
             const userPermission = log.userType;
-            const email = log.email;
             const userName = getFormattedName(log.email);
 
             document.cookie = `accessToken=${accessToken}; path=/; SameSite=Strict`;
             document.cookie = `refreshToken=${refreshToken}; path=/; SameSite=Strict`;
             document.cookie = `userName=${userName}; path=/; SameSite=Strict`;
-            document.cookie = `email=${email}; path=/; SameSite=Strict`;
-
 
             if (userPermission == "User") {
                 window.location.href = "http://127.0.0.1:5500/html/traininguser.html"
@@ -50,48 +45,6 @@ const login = async () => {
         console.log(error)
     }
 }
-
-// export const refreshAccessToken = async (email, refreshToken) => {
-//     const refreshOptions = {
-//         method: "PUT",
-//         headers: {
-//             "Content-Type": "application/json",
-//             "Authorization": `Bearer ${refreshToken}`
-//         }
-//     };
-
-//     const refreshUrl = `http://localhost:8080/api-eurofarma/auth/v1/refresh/${email}`;
-//     console.log(refreshUrl);
-//     try {
-//         const refreshResponse = await fetch(refreshUrl, refreshOptions);
-
-//         if (refreshResponse.status == 200) {
-//             const data = await refreshResponse.json();
-
-//             const accessToken = data.accessToken;
-//             const refreshToken = data.refreshToken;
-
-//             deleteCookie("accessToken");
-//             deleteCookie("refreshToken");
-
-//             document.cookie = `accessToken=${accessToken}; path=/; SameSite=Strict`;
-//             document.cookie = `refreshToken=${refreshToken}; path=/; SameSite=Strict`;
-
-//             await getAllTrainings();
-//         } else if (refreshResponse.status == 500) {
-//             console.error("Failed to refresh token.");
-//             // alert("Session timeout");
-//             window.location.href = "http://127.0.0.1:5500/html/registerpage.html"; // Redireciona para a página de login
-
-//         }
-//     } catch (error) {
-//         console.error("Error refreshing token:", error);
-//     }
-// }
-
-// function deleteCookie(name) {
-//     document.cookie = `${name}=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/;`;
-// }
 
 document.addEventListener("DOMContentLoaded", () => {
     const form = document.querySelector("form")
