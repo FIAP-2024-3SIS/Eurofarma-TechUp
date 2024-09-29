@@ -26,14 +26,19 @@ const login = async () => {
 
             const accessToken = log.accessToken;
             const refreshToken = log.refreshToken;
+            const userPermission = log.userType;
+            const userName = getFormattedName(log.email);
 
             document.cookie = `accessToken=${accessToken}; path=/; SameSite=Strict`;
             document.cookie = `refreshToken=${refreshToken}; path=/; SameSite=Strict`;
+            document.cookie = `userName=${userName}; path=/; SameSite=Strict`;
 
-            window.location.href = "http://127.0.0.1:5500/html/trainingadmin.html"
 
+            if (userPermission == "User") {
+                window.location.href = "http://127.0.0.1:5500/html/traininguser.html"
+            } else
+                window.location.href = "http://127.0.0.1:5500/html/trainingadmin.html"
         } else if (response == 403) {
-
             alert("Login failed. Please check your username and password.")
         }
 
@@ -55,3 +60,7 @@ document.addEventListener("DOMContentLoaded", () => {
     })
 })
 
+function getFormattedName(email) {
+    let name = email.split('.')[0];
+    return name.charAt(0).toUpperCase() + name.slice(1).toLowerCase();
+}
