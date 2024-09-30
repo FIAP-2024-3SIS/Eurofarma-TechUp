@@ -1,4 +1,3 @@
-// import { refreshAccessToken } from './loginPage.js';
 
 const email = getCookieValue("email");
 const userName = getCookieValue("userName");
@@ -9,7 +8,7 @@ let refreshToken = "";
 export const getAllTrainings = async () => {
     accessToken = getCookieValue("accessToken");
     refreshToken = getCookieValue("refreshToken");
-    
+
     const url = "http://localhost:8080/api-eurofarma/training/v1/all";
     const options = {
         method: "GET",
@@ -26,7 +25,6 @@ export const getAllTrainings = async () => {
             const log = await connection.json();
             console.log(log);
             setTrainings(log);
-
             setName();
 
         } else if (response == 403) {
@@ -109,7 +107,7 @@ function setTrainings(json) {
             const nomeDepartamento = treinamentos.querySelector(".nomeDepartamento");
             const nomeTreinamento = treinamentos.querySelector(".nomeTreinamento");
             const dataHorario = treinamentos.querySelector(".dataHorario");
-            const duracao = treinamentos.querySelector(".duracao") ;
+            const duracao = treinamentos.querySelector(".duracao");
             const modalidade = treinamentos.querySelector(".modalidade");
 
             nomeDepartamento.textContent = json[aux].department.name;
@@ -129,3 +127,9 @@ function setDateTime(date, time) {
 
     return dateTime;
 }
+function setDateTime2(dateTime2) {
+    const name = document.getElementById("training-name").textContent;
+    console.log(name)
+}
+
+setDateTime2("12/06/2024 21:45");

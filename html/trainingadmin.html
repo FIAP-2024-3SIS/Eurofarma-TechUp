@@ -204,16 +204,31 @@
                 <a href="#" class="close-icon"><i class="fa-solid fa-x"></i></a>
                 <h2>Criar Novo Treinamento</h2>
                 <hr class="title-separator">
-                <form>
+                <form class="form">
+                    <label for="training-name">Nome do treinamento:</label>
+                    <div class="select-container">
+                        <input type="text" id="training-name" placeholder="Inserir nome"><i
+                            class="fa-solid fa-arrow-down"></i>
+                    </div>
                     <label for="training-department">Área de Treinamento:</label>
                     <div class="select-container">
-                        <input type="text" id="training-department" placeholder="Selecionar a área"><i
-                            class="fa-solid fa-arrow-down"></i>
+                        <select id="optionsDepartamento" name="options">
+                            <option value="" disabled selected>Selecionar a área</option>
+                            <option value="1-Recursos Humanos ">1-Recursos Humanos </option>
+                            <option value="2-Segurança da Informação">2-Segurança da Informação</option>
+                            <option value="3-Pesquisa e Desenvolvimento">3-Pesquisa e Desenvolvimento</option>
+                            <option value="4-Controle de Qualidade">4-Controle de Qualidade</option>
+                            <option value="5-Produção e Manufatura">5-Produção e Manufatura</option>
+                            <option value="6-Segurança do Trabalho">6-Segurança do Trabalho</option>
+                            <option value="7-Jurídico e Compliance">7-Jurídico e Compliance</option>
+                            <option value="8-Finanças e Contabilidade">8-Finanças e Contabilidade</option>
+                            <option value="9-Vendas e Marketing">9-Vendas e Marketing</option>
+                        </select>
                     </div>
 
                     <label for="training-duration">Duração:</label>
                     <div class="select-container">
-                        <input type="text" id="training-duration" placeholder="Selecionar a duração"><i
+                        <input type="text" id="training-duration" placeholder="Inserir duração"><i
                             class="fa-solid fa-arrow-down"></i>
                     </div>
 
@@ -225,19 +240,29 @@
 
                     <label for="training-mode">Modalidade:</label>
                     <div class="select-container">
-                        <input type="text" id="training-mode" placeholder="Selecionar a modalidade"><i
-                            class="fa-solid fa-arrow-down"></i>
-                    </div>
+                        <div class="select-container">
+                            <select id="optionsModalidade" name="options">
+                                <option value="" disabled selected>Selecionar a modalidade</option>
+                                <option value="On-line">On-line</option>
+                                <option value="Presencial">Presencial</option>
+                            </select>
+                        </div>
 
-                    <label for="training-location">Local:</label>
-                    <div class="select-container">
-                        <input type="text" id="training-location" placeholder="Selecionar o local"><i
-                            class="fa-solid fa-arrow-down"></i>
-                    </div>
+                        <label for="training-location">Local:</label>
+                        <div class="select-container">
+                            <input type="text" id="training-location" placeholder="Inserir o local"><i
+                                class="fa-solid fa-arrow-down"></i>
+                        </div>
 
-                    <div class="btn-createtraining">
-                        <button type="submit">Criar Treinamento</button>
-                    </div>
+                        <label for="training-description">Descrição:</label>
+                        <div class="select-container">
+                            <input type="text" id="training-description" placeholder="Inserir descrição"><i
+                                class="fa-solid fa-arrow-down"></i>
+                        </div>
+
+                        <div class="btn-createtraining">
+                            <button id="" type="submit">Criar Treinamento</button>
+                        </div>
                 </form>
             </div>
         </div>
@@ -247,6 +272,7 @@
         <a href="#new-training-popup" class="mobile-bottom-btn"><i class="fa-solid fa-plus"></i></a>
     </div>
     <script type="module" src="../js/trainingadmin.js"></script>
+    <script  src="../js/createTraining.js"></script>
 </body>
 
 </html>

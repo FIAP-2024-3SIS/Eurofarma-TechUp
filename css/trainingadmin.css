@@ -253,6 +253,19 @@ body {
     color: #001d4f;
 }
 
+select:focus option {
+    background-color: var(--main-bg-popup);
+    color: white;
+}
+#options {
+    border: 2px solid white; 
+}
+
+select:focus {
+    outline: none; 
+    border-color: white; 
+}
+
 
 #new-training-popup {
     position: fixed;
