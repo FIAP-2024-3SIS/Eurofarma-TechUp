@@ -2,6 +2,9 @@
 
 Nosso projeto visa enfrentar os desafios de Gestão Digital de Treinamentos e Gestão do Conhecimento com IA, integrando essas soluções em um software prático e intuitivo. O objetivo é otimizar a gestão de treinamentos e o acesso ao conhecimento, tornando o processo mais eficiente e personalizado.
 
+# Link do YOUTUBE Protótipo 🎞
+https://youtu.be/pZc7OXyZlYk?feature=shared
+
 ## Objetivo
 
 Nosso objetivo é eliminar a duplicação de dados e facilitar o acesso a informações-chave, promovendo um ambiente mais ágil e eficiente. Além disso, garantiremos a personalização de treinamentos e a customização de conteúdos para cada participante, contribuindo para uma gestão mais sustentável e orientada a dados, alinhada com as diretrizes da Eurofarma.
