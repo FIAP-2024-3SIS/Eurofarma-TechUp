@@ -20,6 +20,9 @@ Nosso objetivo é eliminar a duplicação de dados e facilitar o acesso a inform
 - **Registrar presença** e completar atividades propostas.
 - **Acompanhar progresso e resultados** de treinamentos anteriores.
 
+## DokcerHub
+https://hub.docker.com/repository/docker/anaeliza12/api-eurofarma/general
+
 ## Telas 🖥️
 
 ### Login Page
